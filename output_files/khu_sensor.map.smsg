@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at controller.v(227): always construct contains both blocking and non-blocking assignments File: /home/trang/FPGAprojects/khu_sensor/source/controller.v Line: 227

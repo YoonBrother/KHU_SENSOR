@@ -1,0 +1,150 @@
+
+State Machine - |khu_sensor|ADS1292_controller:U_ads1292|r_sys_mode
+Name r_sys_mode.SYS_MODE_RREG r_sys_mode.SYS_MODE_IDLE r_sys_mode.SYS_MODE_RDATAC 
+r_sys_mode.SYS_MODE_IDLE 0 0 0 
+r_sys_mode.SYS_MODE_RREG 1 1 0 
+r_sys_mode.SYS_MODE_RDATAC 0 1 1 
+
+State Machine - |khu_sensor|ADS1292_controller:U_ads1292|r_state
+Name r_state.ST_SPI_WAIT r_state.ST_RDATAC_GETDATA2 r_state.ST_RDATAC_GETDATA r_state.ST_RDATAC_SEND_DUMMY r_state.ST_DATAREAD_INIT r_state.ST_WREG_WAIT3 r_state.ST_WREG_SEND_DATA r_state.ST_WREG_WAIT2 r_state.ST_WREG_SEND2 r_state.ST_WREG_WAIT1 r_state.ST_WREG_SEND1 r_state.ST_WREG_INIT r_state.ST_RREG_SEND_DUMMY r_state.ST_RREG_GETDATA r_state.ST_RREG_WAIT2 r_state.ST_RREG_SEND2 r_state.ST_RREG_WAIT1 r_state.ST_RREG_SEND1 r_state.ST_RREG_INIT r_state.ST_SYSCMD_WAIT r_state.ST_SYSCMD_WARMUP r_state.ST_SYSCMD_INIT r_state.ST_IDLE 
+r_state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+r_state.ST_SYSCMD_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+r_state.ST_SYSCMD_WARMUP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+r_state.ST_SYSCMD_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+r_state.ST_RREG_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+r_state.ST_RREG_SEND1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+r_state.ST_RREG_WAIT1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+r_state.ST_RREG_SEND2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+r_state.ST_RREG_WAIT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+r_state.ST_RREG_GETDATA 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+r_state.ST_RREG_SEND_DUMMY 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_INIT 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_SEND1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_WAIT1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_SEND2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_WAIT2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_SEND_DATA 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_WREG_WAIT3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_DATAREAD_INIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_RDATAC_SEND_DUMMY 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_RDATAC_GETDATA 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_RDATAC_GETDATA2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_SPI_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |khu_sensor|MPR121_controller:u_mpr121|r_state
+Name r_state.ST_I2C_READ_GET_DATA r_state.ST_I2C_READ_WAIT_2 r_state.ST_I2C_READ_WAIT_DATA r_state.ST_I2C_READ_REQUEST_DATA r_state.ST_I2C_READ_WAIT_FINISH r_state.ST_I2C_READ_PREPARE r_state.ST_I2C_READ_2 r_state.ST_I2C_READ_1 r_state.ST_I2C_READ_START r_state.ST_I2C_READ_INIT r_state.ST_I2C_WRITE_WAIT_FINISH r_state.ST_I2C_WRITE_STOP r_state.ST_I2C_WRITE_SEND_DATA2 r_state.ST_I2C_WRITE_GET_DATA2 r_state.ST_I2C_WRITE_PREPAIR_DATA2 r_state.ST_I2C_WRITE_SEND_DATA r_state.ST_I2C_WRITE_GET_DATA r_state.ST_I2C_WRITE_START r_state.ST_I2C_WRITE_INIT r_state.ST_IDLE 
+r_state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+r_state.ST_I2C_WRITE_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+r_state.ST_I2C_WRITE_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+r_state.ST_I2C_WRITE_GET_DATA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+r_state.ST_I2C_WRITE_SEND_DATA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+r_state.ST_I2C_WRITE_PREPAIR_DATA2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+r_state.ST_I2C_WRITE_GET_DATA2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+r_state.ST_I2C_WRITE_SEND_DATA2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+r_state.ST_I2C_WRITE_STOP 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_WRITE_WAIT_FINISH 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_INIT 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_START 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_PREPARE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_WAIT_FINISH 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_REQUEST_DATA 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_WAIT_DATA 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_WAIT_2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+r_state.ST_I2C_READ_GET_DATA 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |khu_sensor|MPR121_controller:u_mpr121|i2c_master:Ui2c|phy_state_reg
+Name phy_state_reg.PHY_STATE_STOP_3 phy_state_reg.PHY_STATE_STOP_2 phy_state_reg.PHY_STATE_STOP_1 phy_state_reg.PHY_STATE_READ_BIT_4 phy_state_reg.PHY_STATE_READ_BIT_3 phy_state_reg.PHY_STATE_READ_BIT_2 phy_state_reg.PHY_STATE_READ_BIT_1 phy_state_reg.PHY_STATE_WRITE_BIT_3 phy_state_reg.PHY_STATE_WRITE_BIT_2 phy_state_reg.PHY_STATE_WRITE_BIT_1 phy_state_reg.PHY_STATE_START_2 phy_state_reg.PHY_STATE_START_1 phy_state_reg.PHY_STATE_REPEATED_START_2 phy_state_reg.PHY_STATE_REPEATED_START_1 phy_state_reg.PHY_STATE_ACTIVE phy_state_reg.PHY_STATE_IDLE 
+phy_state_reg.PHY_STATE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+phy_state_reg.PHY_STATE_ACTIVE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+phy_state_reg.PHY_STATE_REPEATED_START_1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+phy_state_reg.PHY_STATE_REPEATED_START_2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+phy_state_reg.PHY_STATE_START_1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+phy_state_reg.PHY_STATE_START_2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+phy_state_reg.PHY_STATE_WRITE_BIT_1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_WRITE_BIT_2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_WRITE_BIT_3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_READ_BIT_1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_READ_BIT_2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_READ_BIT_3 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_READ_BIT_4 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_STOP_1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_STOP_2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+phy_state_reg.PHY_STATE_STOP_3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |khu_sensor|MPR121_controller:u_mpr121|i2c_master:Ui2c|state_reg
+Name state_reg.STATE_STOP state_reg.STATE_READ state_reg.STATE_WRITE_3 state_reg.STATE_WRITE_2 state_reg.STATE_WRITE_1 state_reg.STATE_ADDRESS_2 state_reg.STATE_ADDRESS_1 state_reg.STATE_START state_reg.STATE_START_WAIT state_reg.STATE_ACTIVE_READ state_reg.STATE_ACTIVE_WRITE state_reg.STATE_IDLE 
+state_reg.STATE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+state_reg.STATE_ACTIVE_WRITE 0 0 0 0 0 0 0 0 0 0 1 1 
+state_reg.STATE_ACTIVE_READ 0 0 0 0 0 0 0 0 0 1 0 1 
+state_reg.STATE_START_WAIT 0 0 0 0 0 0 0 0 1 0 0 1 
+state_reg.STATE_START 0 0 0 0 0 0 0 1 0 0 0 1 
+state_reg.STATE_ADDRESS_1 0 0 0 0 0 0 1 0 0 0 0 1 
+state_reg.STATE_ADDRESS_2 0 0 0 0 0 1 0 0 0 0 0 1 
+state_reg.STATE_WRITE_1 0 0 0 0 1 0 0 0 0 0 0 1 
+state_reg.STATE_WRITE_2 0 0 0 1 0 0 0 0 0 0 0 1 
+state_reg.STATE_WRITE_3 0 0 1 0 0 0 0 0 0 0 0 1 
+state_reg.STATE_READ 0 1 0 0 0 0 0 0 0 0 0 1 
+state_reg.STATE_STOP 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |khu_sensor|controller:U_controller|pre_state2
+Name pre_state2.ST_ADS_RDATAC_SEND_RESULTS pre_state2.ST_ADS_RDATAC_INIT pre_state2.ST_ADS_WREG_INIT pre_state2.ST_ADS_RREG_INIT pre_state2.ST_ADS_RDATA_INIT pre_state2.ST_ADS_SYSCMD_INIT pre_state2.ST_MPR_IRQ pre_state2.ST_WRITE_MPR_INIT pre_state2.ST_READ_MPR_INIT pre_state2.ST_IDLE 
+pre_state2.ST_IDLE 0 0 0 0 0 0 0 0 0 0 
+pre_state2.ST_READ_MPR_INIT 0 0 0 0 0 0 0 0 1 1 
+pre_state2.ST_WRITE_MPR_INIT 0 0 0 0 0 0 0 1 0 1 
+pre_state2.ST_MPR_IRQ 0 0 0 0 0 0 1 0 0 1 
+pre_state2.ST_ADS_SYSCMD_INIT 0 0 0 0 0 1 0 0 0 1 
+pre_state2.ST_ADS_RDATA_INIT 0 0 0 0 1 0 0 0 0 1 
+pre_state2.ST_ADS_RREG_INIT 0 0 0 1 0 0 0 0 0 1 
+pre_state2.ST_ADS_WREG_INIT 0 0 1 0 0 0 0 0 0 1 
+pre_state2.ST_ADS_RDATAC_INIT 0 1 0 0 0 0 0 0 0 1 
+pre_state2.ST_ADS_RDATAC_SEND_RESULTS 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |khu_sensor|controller:U_controller|pre_state1
+Name pre_state1.ST_IDLE pre_state1.ST_GET_SECOND_PARA pre_state1.ST_GET_FIRST_PARA 
+pre_state1.ST_IDLE 0 0 0 
+pre_state1.ST_GET_FIRST_PARA 1 0 1 
+pre_state1.ST_GET_SECOND_PARA 1 1 0 
+
+State Machine - |khu_sensor|controller:U_controller|state
+Name state.ST_ADS_RDATAC_SEND_RESULTS state.ST_ADS_RDATAC_WAIT state.ST_ADS_RDATAC_INIT state.ST_ADS_SENDPC_WAIT_2 state.ST_ADS_SENDPC_2 state.ST_ADS_SENDPC_WAIT state.ST_ADS_SENDPC state.ST_ADS_WREG_WAIT state.ST_ADS_WREG_INIT state.ST_ADS_RREG_WAIT state.ST_ADS_RREG_INIT state.ST_ADS_RDATA_INIT state.ST_ADS_SYSCMD_WAIT state.ST_ADS_SYSCMD_INIT state.ST_MPR_IRQ state.ST_MPR_ERROR_REPORT state.ST_MPR_SENDPC_WAIT_3 state.ST_MPR_SENDPC_3 state.ST_MPR_SENDPC_WAIT_2 state.ST_MPR_SENDPC_2 state.ST_MPR_SENDPC_WAIT state.ST_MPR_SENDPC state.ST_WRITE_MPR_WAIT state.ST_WRITE_MPR_EN state.ST_WRITE_MPR_INIT state.ST_READ_MPR_WAIT state.ST_READ_MPR_EN state.ST_READ_MPR_INIT state.ST_SEND_TEST_CHAR_WAIT state.ST_READ_DATA_COME state.ST_CHECK_LSR state.ST_READ_LSR state.ST_SEND_TEST_CHAR state.ST_IER state.ST_FCR state.ST_LCR state.ST_DL_LSB state.ST_DL_MSB state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.ST_DL_MSB 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.ST_DL_LSB 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.ST_LCR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.ST_FCR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.ST_IER 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.ST_SEND_TEST_CHAR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.ST_READ_LSR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.ST_CHECK_LSR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.ST_READ_DATA_COME 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.ST_SEND_TEST_CHAR_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.ST_READ_MPR_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_READ_MPR_EN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_READ_MPR_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_WRITE_MPR_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_WRITE_MPR_EN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_WRITE_MPR_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC_WAIT_2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_SENDPC_WAIT_3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_ERROR_REPORT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_MPR_IRQ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SYSCMD_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SYSCMD_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RDATA_INIT 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RREG_INIT 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RREG_WAIT 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_WREG_INIT 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_WREG_WAIT 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SENDPC 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SENDPC_WAIT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SENDPC_2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_SENDPC_WAIT_2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RDATAC_INIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RDATAC_WAIT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ST_ADS_RDATAC_SEND_RESULTS 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

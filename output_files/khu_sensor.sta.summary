@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -2.085
+TNS   : -139.084
+
+Type  : Slow 1200mV 85C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : -0.849
+TNS   : -0.849
+
+Type  : Slow 1200mV 85C Model Setup 'MPR121_SCL'
+Slack : -0.412
+TNS   : -3.296
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -0.205
+TNS   : -0.559
+
+Type  : Slow 1200mV 85C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MPR121_SCL'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'MPR121_SCL'
+Slack : -0.638
+TNS   : -5.104
+
+Type  : Slow 1200mV 85C Model Removal 'MPR121_SCL'
+Slack : 1.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MPR121_SCL'
+Slack : -3.210
+TNS   : -13.490
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'r_clk_counter[24]'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_regs:Uregs|enable'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.711
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.680
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 19.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.748
+TNS   : -113.945
+
+Type  : Slow 1200mV 0C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : -0.604
+TNS   : -0.604
+
+Type  : Slow 1200mV 0C Model Setup 'MPR121_SCL'
+Slack : -0.196
+TNS   : -1.568
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.174
+TNS   : -0.400
+
+Type  : Slow 1200mV 0C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MPR121_SCL'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'MPR121_SCL'
+Slack : -0.377
+TNS   : -3.016
+
+Type  : Slow 1200mV 0C Model Removal 'MPR121_SCL'
+Slack : 0.837
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MPR121_SCL'
+Slack : -3.210
+TNS   : -13.490
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'r_clk_counter[24]'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_regs:Uregs|enable'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.695
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.686
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 19.684
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -0.996
+TNS   : -65.052
+
+Type  : Fast 1200mV 0C Model Setup 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : -0.337
+TNS   : -0.337
+
+Type  : Fast 1200mV 0C Model Setup 'MPR121_SCL'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MPR121_SCL'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'MPR121_SCL'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'MPR121_SCL'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MPR121_SCL'
+Slack : -3.000
+TNS   : -15.403
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'r_clk_counter[24]'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_regs:Uregs|enable'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.265
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u1|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 19.753
+TNS   : 0.000
+
+------------------------------------------------------------

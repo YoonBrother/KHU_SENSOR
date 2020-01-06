@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sun Sep 29 23:34:36 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : khu_sensor
+Top-level Entity Name : khu_sensor
+Family : Cyclone IV E
+Total logic elements : 2,375 / 114,480 ( 2 % )
+    Total combinational functions : 1,847 / 114,480 ( 2 % )
+    Dedicated logic registers : 1,341 / 114,480 ( 1 % )
+Total registers : 1345
+Total pins : 57 / 529 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 1,310,848 / 3,981,312 ( 33 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
